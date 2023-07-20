@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const data = [
+const myData = [
   {
     id: 100001,
     name: "قسم ملابس الرجال ",
@@ -241,7 +241,7 @@ const data = [
 ];
 
 router.get("/data", (req, res) => {
-  res.send(data);
+  res.send(myData);
 });
 
 module.exports = router;
