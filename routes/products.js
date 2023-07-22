@@ -4265,10 +4265,10 @@ module.exports = [
           "أسود"
         ],
         "available": [
-          "متوفر",
-          "متوفر"
+          "نفذ ",
+          " متوفر بكثرة"
         ],
-        "isAvailable": true,
+        "isAvailable": false,
         "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483304/Jammal/Women/xvGsR3GLoRrXhNeabjME6q8Za1XWTQHu6MXkssXO_zp3vvc.jpg",
         "editedImages": [
           "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483304/Jammal/Women/xvGsR3GLoRrXhNeabjME6q8Za1XWTQHu6MXkssXO_zp3vvc.jpg",
@@ -4356,47 +4356,6 @@ module.exports = [
           "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
           "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
           "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
-        ],
-        "normalImages": [
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
-        ]
-      },
-      {
-        "id": 105,
-        "name": "بلوزة عيون",
-        "price": "270 ج.م",
-        "description": [
-          "اسم الموديل  بلوز عيون",
-          " الخامه SPH",
-          "الطول ٧٠سم",
-          "المقاس وان سيز ل ٨٠ك مرتاح",
-          "كم بمب بشداد من الكم والوسط تقدري تلبسيها بكذا طريقه  جامده جدا"
-        ],
-        "size": [
-          "وان سيز",
-          "وان سيز"
-        ],
-        "colors": [
-          "أسود",
-          "أسود"
-        ],
-        "available": [
-          "متوفر",
-          "متوفر"
-        ],
-        "isAvailable": true,
-        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483325/Jammal/Women/Naz1K1igX8lCykX60kogav3ar3Iv59NnsCgZ8sdc_pkj1e1.jpg",
-        "editedImages": [
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483325/Jammal/Women/Naz1K1igX8lCykX60kogav3ar3Iv59NnsCgZ8sdc_pkj1e1.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483469/Jammal/Women/Product/47698_zfzpdh.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483477/Jammal/Women/Product/95290_wwdlby.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483486/Jammal/Women/Product/84933_y65uh9.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483494/Jammal/Women/Product/40974_x4d4y9.jpg",
-          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483502/Jammal/Women/Product/71017_dc6xul.jpg"
         ],
         "normalImages": [
           "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
@@ -6240,11 +6199,79 @@ module.exports = [
   {
     "id": 100017,
     "name": "قسم العروض",
-    "products": []
+    "products": [
+      {
+        "id": 1601,
+        "name": "ترنج شورت شطرنج",
+        "description": [
+          "-نعل حقن عالي الجودة",
+          "-وش فوندي مستورد ",
+          "-مريح في اللبس ",
+          "-شيك وعملي جدا جدا ",
+          "-الوان ( اسود-رمادي)",
+          "مقاسات (41-42-43-44-45)"
+        ],
+        "size": [],
+        "colors": [],
+        "available": [
+          "متوفر"
+        ],
+        "isAvailable": true,
+        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483228/Jammal/MEN/lV6D0IKpaP7wRJJ4NNowKHxZdsYAkU7bZ4PYkZUr_teepgs.jpg",
+        "editedImages": [
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688482823/Jammal/MEN/ZZGx53DJl2hKNUlWwSJgtWomVAWJc86Mc3Wi5MIu_enudzl.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
+        ],
+        "normalImages": [
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
+        ]
+      }
+    ]
   },
   {
     "id": 100018,
     "name": "قسم منتجات متنوعة",
-    "products": []
+    "products": [
+      {
+        "id": 1701,
+        "name": "ترنج شورت شطرنج",
+        "description": [
+          "-نعل حقن عالي الجودة",
+          "-وش فوندي مستورد ",
+          "-مريح في اللبس ",
+          "-شيك وعملي جدا جدا ",
+          "-الوان ( اسود-رمادي)",
+          "مقاسات (41-42-43-44-45)"
+        ],
+        "size": [],
+        "colors": [],
+        "available": [
+          "متوفر"
+        ],
+        "isAvailable": true,
+        "image": "https://res.cloudinary.com/duc04fwdb/image/upload/v1688483228/Jammal/MEN/lV6D0IKpaP7wRJJ4NNowKHxZdsYAkU7bZ4PYkZUr_teepgs.jpg",
+        "editedImages": [
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688482823/Jammal/MEN/ZZGx53DJl2hKNUlWwSJgtWomVAWJc86Mc3Wi5MIu_enudzl.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
+        ],
+        "normalImages": [
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg",
+          "https://res.cloudinary.com/duc04fwdb/image/upload/v1688749538/Jammal/Holder/loading_fjikc2.jpg"
+        ]
+      }
+    ]
   }
 ];

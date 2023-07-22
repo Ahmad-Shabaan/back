@@ -38,8 +38,20 @@ const products = eval(productsContents);
 
 
 const myMiddlewareFunc = function (req, res, next) {
+
+    // Allow requests from the same origin and private networks
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Private-Network', 'true');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    if (req.method === 'OPTIONS') {
+      res.sendStatus(200);
+    } else {
+      next();
+    }
+  
   // Do something here
-  next(); // Call next() to move on to the next middleware function or route handler
+ // next(); // Call next() to move on to the next middleware function or route handler
 };
 router.get("/products", myMiddlewareFunc, function (req, res) {
   res.json(products);
@@ -107,12 +119,15 @@ fs.writeFileSync(productsFilePath, updatedProductsContents);
 });
 
 // Route for updating a product by ID (PUT)
-app.put("/products/:id", (req, res) => {
+app.put("/products/:catId/:id", (req, res) => {
   // Get the ID from the request parameters
+  const catId = parseInt(req.params.catId);
   const id = parseInt(req.params.id);
 
   // Find the index of the product with the matching ID in the array
-  const index = products.findIndex((p) => p.id === id);
+  const catIndex = products.findIndex((cat) => cat.id === catId);
+
+  const index = products[catIndex].products.findIndex((p) => p.id === id);
 
   // Return a 404 error if the product doesn't exist
   if (index === -1) {
@@ -120,11 +135,20 @@ app.put("/products/:id", (req, res) => {
   }
 
   // Update the product with the new data from the request body
-  const updatedProduct = { ...products[index], ...req.body };
-  products[index] = updatedProduct;
+  console.log(req.body)
+  const updatedProduct = { ...products[catIndex].products[index], ...req.body };
+  products[catIndex].products[index] = updatedProduct;
+  
+    // Convert the array back into a string
+    const updatedProductsContents = 'module.exports = ' + JSON.stringify(products, null, 2) + ';';
+    // console.log(updatedProductsContents);
+
+    // Write the updated contents back to the file
+    fs.writeFileSync(productsFilePath, updatedProductsContents);
 
   // Return the updated product
-  res.json(updatedProduct);
+  const message = "تم التعديل";
+  res.json({message});
 });
 
 // Route for deleting a product by ID (DELETE)
@@ -132,16 +156,12 @@ app.delete("/products/:catId/:id", (req, res) => {
   // Get the ID from the request parameters
   const catId = parseInt(req.params.catId);
   const id = parseInt(req.params.id);
-console.log(catId);
-console.log(id);
 
   // Find the index of the product with the matching ID in the array
   const catIndex = products.findIndex((cat) => cat.id === catId);
 
   const index = products[catIndex].products.findIndex((p) => p.id === id);
-  console.log(products[catIndex])
-  console.log(catIndex)
-  console.log(index);
+
 
   // Return a 404 error if the product doesn't exist
   if (index === -1) {
